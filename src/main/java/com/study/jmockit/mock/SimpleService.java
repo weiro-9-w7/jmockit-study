@@ -5,4 +5,9 @@ public class SimpleService {
         SimpleDAO simpleDAO = new SimpleDAO();
         return simpleDAO.fun1(name);
     }
+
+    public String fun4(String name) {
+        SimpleDAO simpleDAO = new SimpleDAO();
+        return simpleDAO.fun4(name);
+    }
 }

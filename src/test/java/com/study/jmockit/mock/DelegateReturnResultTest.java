@@ -1,7 +1,5 @@
 package com.study.jmockit.mock;
 
-import com.study.jmockit.mock.SimpleDAO;
-import com.study.jmockit.mock.SimpleService;
 import mockit.Delegate;
 import mockit.Expectations;
 import mockit.Mocked;
