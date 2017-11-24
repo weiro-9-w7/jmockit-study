@@ -6,6 +6,11 @@ public class TestableContructionWithParamObject {
 
         System.out.println(param1 + ", " + param2);
         System.out.println("begin to construct TestableObject");
+        // some complex logic
+    }
+
+    public TestableContructionWithParamObject() {
+        System.out.println("this is real constructor method.");
     }
 
     public void func1() {

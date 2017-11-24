@@ -1,8 +1,17 @@
+
 The project will show jmockit some features.
 
 We will show following features :
 
     1. Mock method, you can refer to com.study.jmockit.cae1.
+    2. How to mock static method
+    3. How to mock constructor
+    4. How to mock constructor with param
+    5. How to mock static block
+    6. How to mock different return value for a method
+    7. How to mock interface without implements (undo)
+    8. How to mock exception (undo)
+    ...
 
 
 1.1 常用注解
@@ -22,7 +31,9 @@ MockUp：模拟函数实现
 Deencapsulation：反射工具类
 
 Notice:
-    Now, There is only jmockit version is 1.7, but the version is older.
-    You can download the latest version jar & Using the following command install in local;
+    Now, There is only jmockit version is 1.7 in inner repository, but the version is older.
+When you use the version, some test case can't passed.
+
+    You can download the latest version jar & Using the following command install in local(you can use pom.xml specified version);
         Command:
         mvn install:install-file -DgroupId=thirdparty_lib -DartifactId=jmockit -Dversion=1.36.1 -Dpackaging=jar -Dfile=jmockit-1.36.1.jar

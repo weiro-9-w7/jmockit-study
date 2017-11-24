@@ -15,6 +15,13 @@ public class TestableContructionWithParamObjectTest {
             assertEquals("test", name);
             assertNotNull(obj);
         }
+
+        @Mock
+        public void $init() {
+            System.out.println(">>>>>>>>call mocked constructor without params");
+        }
+
+
     }
 
     @BeforeClass
@@ -23,7 +30,12 @@ public class TestableContructionWithParamObjectTest {
     }
 
     @Test
-    public void testContructor(){
+    public void testContructorWithoutParams(){
+        new TestableContructionWithParamObject().func1();
+    }
+
+    @Test
+    public void testDefaultContructor(){
         new TestableContructionWithParamObject("test", new Object()).func1();
     }
 }
